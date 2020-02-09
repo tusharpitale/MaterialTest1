@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 
 import { DataSource } from '@angular/cdk/table';
 import { PostDialogComponent } from '../post-dialog/post-dialog.component';
-import { MatDialog } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-dashboard',
