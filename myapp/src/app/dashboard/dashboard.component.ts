@@ -21,6 +21,7 @@ export class DashboardComponent implements OnInit {
   dataSource = new PostDataSource(this.dataService);
 
   ngOnInit() {
+    this.dataSource.connect();
   }
 
   deletePost(id) {
