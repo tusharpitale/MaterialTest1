@@ -14,6 +14,10 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DataService } from './data/data.service';
 import { PostDialogComponent } from './post-dialog/post-dialog.component';
+import { MyTreeCompComponent } from './my-tree-comp/my-tree-comp.component';
+import { MatTreeModule } from '@angular/material/tree';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 
 @NgModule({
@@ -22,7 +26,8 @@ import { PostDialogComponent } from './post-dialog/post-dialog.component';
     DialogExampleComponent,
     WelcomeComponent,
     DashboardComponent,
-    PostDialogComponent
+    PostDialogComponent,
+    MyTreeCompComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +35,10 @@ import { PostDialogComponent } from './post-dialog/post-dialog.component';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatTreeModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent],
